@@ -10,14 +10,14 @@ class Orang{
     public function __construct($nama)
     {
         $this->nama = $nama;
-        echo "object ". $this->nama ."dibuat <br>";
+        echo "object ". $this->nama ." dibuat <br>";
         $this->tampilaknPassword();
     }
 
     //Destructor
     public function __destruct()
     {
-        echo "object ". $this->nama ."dihapus <br>";
+        echo "object ". $this->nama ." dihapus <br>";
     }
 
     //method

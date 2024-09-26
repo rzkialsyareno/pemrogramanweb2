@@ -20,7 +20,7 @@
         $mahasiswa->setAlamat('Kota Jambi');
 
         echo "<br>";
-        echo "Data Mahasiswa". $mahasiswa->getNama(). "br";
+        echo "Data Mahasiswa". $mahasiswa->getNama(). "<br>";
         echo "Nama : ". $mahasiswa->getNama() ."<br>";
         echo "Tgl Lahir : ". $mahasiswa->getTglLahir() ."<br>";
         echo "Alamat : ". $mahasiswa->getAlamat() ."<br>";
