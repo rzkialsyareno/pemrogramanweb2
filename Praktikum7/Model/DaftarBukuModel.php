@@ -38,6 +38,7 @@ public function getDataById($id){
         $row = $query->fetch_assoc();
 
         $buku = new Buku($row['judul'], $row['pengarang'], $row['penerbit'], $row['tahun']);
+        $buku->setId($row['id']);
 
         return $buku;
     }
