@@ -152,7 +152,7 @@
                 <i class="bi bi-house"></i>
                 Dashboard
             </a>
-            <a href="<?= base_url() ?>admin/databuku" class="nav-link active">
+            <a href="<?= base_url() ?>admin/databuku" class="nav-link">
                 <i class="bi bi-book"></i>
                 Kelola Buku
             </a>
@@ -160,7 +160,7 @@
                 <i class="bi bi-receipt"></i>
                 Kelola Transaksi
             </a>
-            <a href="<?= base_url() ?>admin/datapengguna" class="nav-link">
+            <a href="<?= base_url() ?>admin/datapelanggan" class="nav-link">
                 <i class="bi bi-people"></i>
                 Kelola Pengguna
             </a>
