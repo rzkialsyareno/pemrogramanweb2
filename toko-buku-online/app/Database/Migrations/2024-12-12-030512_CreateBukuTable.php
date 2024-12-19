@@ -11,7 +11,7 @@ class CreateBukuTable extends Migration
         $this->forge->addField([
             'id' => [
                 'type'           => 'INT',
-                'constraint'     => 11,
+                'constraint'     => 5,
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
@@ -23,19 +23,25 @@ class CreateBukuTable extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => 250,
             ],
+            'penerbit' => [
+                'type'       => 'VARCHAR',
+                'constraint' => 250,
+            ],
             'tahun' => [
                 'type'       => 'INT',
                 'constraint' => 5
             ],
-            'THUMBNAIL_URL' => [
+            'thumbnail_url' => [
                 'type'       => 'VARCHAR',
-                'constraint' => 250,
+                'constraint' => 250
             ]
         ]);
+        $this->forge->addKey('id', true);
+        $this->forge->createTable('books');
     }
 
     public function down()
     {
-        //
+        $this->forge->dropTable('books', true);
     }
 }
